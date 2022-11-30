@@ -16,7 +16,7 @@
     "pg": "^7.4.0",
     "sequelize": "^4.22.6",
     "socket.io": "^2.0.4",
-    "sqlite3": "^4.0"
+    "sqlite3": "^5.0.3"
   },
   "engines": {
     "node": "8.9.4"
