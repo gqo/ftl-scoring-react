@@ -9,7 +9,9 @@ var sequelize;
 
 var env = process.env.NODE_ENV || "development";
 if (env === "production") {
-    sequelize = new Sequelize(process.env.DATABASE_URL);
+    sequelize = new Sequelize(process.env.DATABASE_URL, null, null, {
+	dialect: 'sqlite'
+    });
 }
 else {
     sequelize = new Sequelize("ftldb", null, null, {
